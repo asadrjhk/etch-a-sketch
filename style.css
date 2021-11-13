@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.content {
+  padding-top: 50px;
+}
+.row {
+  display: flex;
+  height: 100%;
+}
+.row > * {
+  flex: 1 1 0;
+}
+.grid {
+  height: 100%;
+  /* border: 1px solid black; */
+}
+.active {
+  background-color: aqua;
+}
+button {
+  padding: 8px 24px;
+  margin-bottom: 20px;
+}
+.container {
+  border: 1px outset gray;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
