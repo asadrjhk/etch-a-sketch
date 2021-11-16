@@ -6,15 +6,34 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
+  flex-direction: column;
 }
+
+button {
+  padding: 8px 24px;
+  margin-bottom: 20px;
+}
+.header {
+  height: 72px;
+  background-color: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #3D2C8D;
+}
+
 .content {
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px 0;
 }
 .row {
   display: flex;
   height: 100%;
 }
-.row > * {
+.row >*{
   flex: 1 1 0;
 }
 .grid {
@@ -24,18 +43,23 @@ body {
 .active {
   background-color: aqua;
 }
-button {
-  padding: 8px 24px;
-  margin-bottom: 20px;
-}
+ 
 .container {
-  border: 1px outset gray;
-  width: 400px;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
+  border: 10px outset gray;
+   width: 400px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
 }
 .buttons {
+   width: 400px;
   display: flex;
   justify-content: space-between;
+}
+.footer {
+  height: 72px;
+  background-color: #DED9C4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
